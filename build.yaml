@@ -14,9 +14,10 @@
 
 include:
   - board: nice_nano//zmk
-    shield: paw_left
-    snippet: studio-rpc-usb-uart
+    shield: paw_left nice_view
     snippet: nrf52840-nosd
   - board: nice_nano//zmk
-    shield: paw_right
+    shield: paw_right nice_view
     snippet: nrf52840-nosd
+  - board: nice_nano//zmk
+    shield: settings_reset
