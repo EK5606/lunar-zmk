@@ -28,6 +28,7 @@
 
             hold-trigger-key-positions = < KEYS_R THUMBS>; // List of keys on the right side of the keyboard
             hold-trigger-on-release;
+            retro-tap;
         };
 
         hmr: home_row_mod_right {
@@ -41,6 +42,7 @@
 
             hold-trigger-key-positions = < KEYS_L THUMBS>; // List of keys on the left side of the keyboard
             hold-trigger-on-release;
+            retro-tap;
         };
     };
 
