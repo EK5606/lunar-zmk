@@ -82,6 +82,19 @@
         };
     };
 
+    macros {
+        cn_comma: cn_comma {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&uc 0xff0c 0>;
+        };
+        cn_period: cn_period {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&uc 0x3002 0>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
