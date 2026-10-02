@@ -44,6 +44,23 @@
             hold-trigger-on-release;
             retro-tap;
         };
+
+         td_shift_caps: td_shift_capsword {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_SHIFT_CAPSWORD";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            bindings = <&kp LSHIFT>, <&caps_word>;
+        };
+
+        mtl: momentary_toggle_layer {
+            compatible = "zmk,behavior-hold-tap";
+            label = "HOLD_MO_TAP_TOG";
+            #binding-cells = <2>;
+            flavor = "tap-preferred";
+            tapping-term-ms = <200>;
+            bindings = <&mo>, <&tog>;
+        };
     };
 
     combos {
