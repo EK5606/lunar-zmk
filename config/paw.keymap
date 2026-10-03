@@ -110,7 +110,7 @@
 &kp TAB         &kp Q              &kp W            &kp E            &kp R         &kp T          &kp Y      &kp U         &kp I                 &kp O                  &kp P                   &kp DELETE
 &kp ESCAPE      &kp A              &kp S            &kp D            &kp F         &kp G          &kp H      &kp J         &kp K                 &kp L                  &kp SEMI                &kp ENTER
 &td_shift_caps  &hml LEFT_SHIFT Z  &hml LEFT_ALT X  &hml LEFT_WIN C  &hml LCTRL V  &kp B          &kp N      &hmr RCTRL M  &hmr RIGHT_WIN COMMA  &hmr RIGHT_ALT PERIOD  &hmr RIGHT_SHIFT SLASH  &kp RIGHT_WIN
-                                   &kp ENTER        &lt 3 SPACE      &mtl 2 1      &kp ENTER      &kp SPACE  &mo 3         &lt 5 BACKSPACE       &none
+                                   &kp ENTER        &lt 3 SPACE      &mtl 2 1      &kp ENTER      &kp SPACE  &mtl 5 4      &kp BACKSPACE         &none
             >;
 
             sensor-bindings =
