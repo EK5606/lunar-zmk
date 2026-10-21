@@ -64,6 +64,13 @@
             tapping-term-ms = <200>;
             bindings = <&mo>, <&tog>;
         };
+
+        arrow_morph: arrow_morph {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS &kp GREATER_THAN>, <&kp EQUAL &kp GREATER_THAN>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
     };
 
     combos {
