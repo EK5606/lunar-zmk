@@ -68,10 +68,7 @@
         arrow_morph: arrow_morph {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings =
-                <&kp MINUS &kp GREATER_THAN>,
-                <&kp EQUAL &kp GREATER_THAN>;
-
+            bindings = <&minus_gt>, <&equal_gt>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
@@ -88,6 +85,8 @@
             bindings = <&kp ENTER>;
             key-positions = <19 20>;
         };
+
+        
     };
 
     macros {
@@ -101,6 +100,18 @@
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&uc 0x3002 0>;
+        };
+
+        minus_gt: minus_gt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp GREATER_THAN>;
+        };
+
+        equal_gt: equal_gt {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp EQUAL>, <&kp GREATER_THAN>;
         };
     };
 
