@@ -68,7 +68,10 @@
         arrow_morph: arrow_morph {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp MINUS &kp GREATER_THAN>, <&kp EQUAL &kp GREATER_THAN>;
+            bindings =
+                <&kp MINUS &kp GREATER_THAN>,
+                <&kp EQUAL &kp GREATER_THAN>;
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
@@ -148,7 +151,7 @@
 
         symbol_layer {
             bindings = <
-&trans  &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &kp PIPE           &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &none              &trans
+&trans  &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &kp PIPE           &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR     &arrow_morph       &trans
 &trans  &kp EXCLAMATION  &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp AMPERSAND      &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp SEMICOLON  &kp DOUBLE_QUOTES  &trans
 &trans  &kp TILDE        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT        &kp AT_SIGN  &kp NON_US_BACKSLASH  &kp COMMA              &kp PERIOD     &kp QUESTION       &trans
                          &trans         &trans            &trans             &trans             &trans       &trans                &trans                 &trans
