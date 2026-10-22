@@ -69,6 +69,7 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&minus_gt>, <&equal_gt>;
+
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
@@ -85,8 +86,6 @@
             bindings = <&kp ENTER>;
             key-positions = <19 20>;
         };
-
-        
     };
 
     macros {
@@ -105,13 +104,13 @@
         minus_gt: minus_gt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp MINUS>, <&kp GREATER_THAN>;
+            bindings = <&kp MINUS &kp GREATER_THAN>;
         };
 
         equal_gt: equal_gt {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp EQUAL>, <&kp GREATER_THAN>;
+            bindings = <&kp EQUAL &kp GREATER_THAN>;
         };
     };
 
@@ -163,8 +162,8 @@
         symbol_layer {
             bindings = <
 &trans  &kp GRAVE        &kp LESS_THAN  &kp GREATER_THAN  &kp MINUS          &kp PIPE           &kp CARET    &kp LEFT_BRACE        &kp RIGHT_BRACE        &kp DOLLAR  &arrow_morph       &trans
-&trans  &kp EXCLAMATION  &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp AMPERSAND      &kp HASH     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp COLON   &kp DOUBLE_QUOTES  &trans
-&trans  &kp TILDE        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp PERCENT        &kp AT_SIGN  &kp NON_US_BACKSLASH  &kp COMMA              &kp PERIOD  &kp QUESTION       &trans
+&trans  &kp EXCLAMATION  &kp ASTERISK   &kp SLASH         &kp EQUAL          &kp COLON          &kp AT_SIGN  &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp HASH    &kp DOUBLE_QUOTES  &trans
+&trans  &kp TILDE        &kp PLUS       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp AMPERSAND      &kp PERCENT  &kp NON_US_BACKSLASH  &kp COMMA              &kp PERIOD  &kp QUESTION       &trans
                          &trans         &trans            &trans             &trans             &trans       &trans                &trans                 &trans
             >;
 
